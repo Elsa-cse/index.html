@@ -88,7 +88,6 @@
     const quizData = [
       {
         question: "What subjects or activities do you naturally gravitate towards?",
-        visuals: "images/math_science_art_history_business.jpg",
         options: [
           { text: "Math and Science", stream: "ComputerScience" },
           { text: "Business and Economics", stream: "Commerce" },
@@ -98,7 +97,6 @@
       },
       {
         question: "How do you feel about solving complex problems and equations?",
-        visuals: "images/math_problems.jpg",
         options: [
           { text: "I enjoy it and feel motivated", stream: "ComputerScience" },
           { text: "It’s interesting, but a little challenging", stream: "Commerce" },
@@ -108,7 +106,6 @@
       },
       {
         question: "Do you enjoy understanding how the human body works or exploring life sciences?",
-        visuals: "images/biology.jpg",
         options: [
           { text: "Yes, I love learning about biology and life sciences", stream: "BioScience" },
           { text: "I’m interested but not passionate about it", stream: "Commerce" },
@@ -118,7 +115,6 @@
       },
       {
         question: "Which of the following best describes your interest in technology?",
-        visuals: "images/computer.jpg",
         options: [
           { text: "I'm fascinated by technology, programming, and computing", stream: "ComputerScience" },
           { text: "I'm interested in technology but prefer other areas more", stream: "BioScience" },
@@ -128,7 +124,6 @@
       },
       {
         question: "If you were asked to create a business plan for a startup, what part excites you the most?",
-        visuals: "images/business.jpg",
         options: [
           { text: "Calculating profits and managing finances", stream: "Commerce" },
           { text: "Crafting a marketing strategy and reaching customers", stream: "Commerce" },
@@ -138,7 +133,6 @@
       },
       {
         question: "Would you enjoy working in a lab setting, conducting experiments, and analyzing data?",
-        visuals: "images/biolab.jpg",
         options: [
           { text: "Yes, I love working hands-on with science experiments", stream: "BioScience" },
           { text: "It's interesting, but I don't know if I'd enjoy it long-term", stream: "ComputerScience" },
@@ -148,7 +142,6 @@
       },
       {
         question: "How do you feel about studying literature, analyzing novels, or exploring human behavior?",
-        visuals: "images/book.jpg",
         options: [
           { text: "I enjoy reading and analyzing stories and human experiences", stream: "Humanities" },
           { text: "I read occasionally but don't feel strongly about it", stream: "Commerce" },
@@ -158,7 +151,6 @@
       },
       {
         question: "Do you see yourself working in the healthcare sector like becoming a doctor or biotechnologist?",
-        visuals: "images/doctor.jpg",
         options: [
           { text: "Yes, I want to pursue a career in health and medicine", stream: "BioScience" },
           { text: "I find it interesting but not my top choice", stream: "BioScience" },
@@ -168,7 +160,6 @@
       },
       {
         question: "Which type of environment would you prefer to work in?",
-        visuals: "images/environment.jpg",
         options: [
           { text: "A tech lab or office with gadgets and coding", stream: "ComputerScience" },
           { text: "An office focused on business and financial discussions", stream: "Commerce" },
@@ -178,7 +169,6 @@
       },
       {
         question: "How much do you enjoy using your creativity in your work or projects?",
-        visuals: "images/painting.jpg",
         options: [
           { text: "I enjoy being creative and coming up with unique ideas", stream: "Humanities" },
           { text: "I like being creative but also enjoy logical work", stream: "ComputerScience" },
@@ -197,9 +187,6 @@
       quizElement.innerHTML = `
         <div class="question">
           <h3>${questionData.question}</h3>
-          <div class="visual">
-            <img src="${questionData.visuals}" alt="Visual for question">
-          </div>
           <div class="options">
             ${questionData.options.map((option, index) => `
               <label>
